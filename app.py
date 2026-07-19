@@ -63,8 +63,9 @@ TEXT = {
     "no": {
         "title": "📄 → 📝 MarkItDown-konverterer",
         "caption": (
-            "Last opp en PDF-, Word-, PowerPoint- eller Excel-fil og få ren, "
-            "kompakt Markdown tilbake — klar til å limes inn i Claude med minst mulig sløsing av tokens."
+            "Last opp en PDF-, Word-, PowerPoint- eller Excel-fil, og få en ren og solid "
+            "Markdown-tekst tilbake — klar til å limes rett inn i Claude, med minimal "
+            "sløsing av tokens og en mer effektiv arbeidsflyt."
         ),
         "supported_expander": "Støttede filtyper",
         "uploader_label": "Velg en fil",
@@ -127,10 +128,10 @@ if "lang" not in st.session_state:
 
 flag_col1, flag_col2, _spacer = st.columns([1, 1, 6])
 with flag_col1:
-    if st.button("🇬🇧", help="English", use_container_width=True):
+    if st.button("🇬🇧 EN", help="English", use_container_width=True):
         st.session_state.lang = "en"
 with flag_col2:
-    if st.button("🇳🇴", help="Norsk", use_container_width=True):
+    if st.button("🇳🇴 NO", help="Norsk", use_container_width=True):
         st.session_state.lang = "no"
 
 lang = st.session_state.lang
