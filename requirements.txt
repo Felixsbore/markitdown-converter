@@ -1,0 +1,2 @@
+streamlit>=1.37
+markitdown[all]>=0.0.1a3
