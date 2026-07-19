@@ -56,22 +56,22 @@ TEXT = {
         "upload_prompt": "Upload a file above to get started.",
         "footer": (
             "Runs entirely on this server session — files aren't stored permanently. "
-            "Built with [MarkItDown](https://github.com/microsoft/markitdown) + Streamlit."
+            "Built with MarkItDown + Streamlit."
         ),
         "lang_name": "English",
     },
     "no": {
         "title": "📄 → 📝 MarkItDown-konverterer",
         "caption": (
-            "Last opp en PDF-, Word-, PowerPoint- eller Excel-fil, og få en ren og solid "
-            "Markdown-tekst tilbake — klar til å limes rett inn i Claude, med minimal "
-            "sløsing av tokens og en mer effektiv arbeidsflyt."
+            "Last opp en PDF-, Word-, PowerPoint- eller Excel-fil, og få en solid "
+            "Markdown-tekst tilbake som er klar til å limes rett inn i Claude eller "
+            "andre KI-tjenester, med minimal sløsing av tokens og mer effektiv bruk."
         ),
         "supported_expander": "Støttede filtyper",
         "uploader_label": "Velg en fil",
         "optimize_toggle": "Optimaliser for å spare tokens",
         "optimize_help": (
-            "Fjerner unødvendige mellomrom, tomme linjer og formateringsstøy, "
+            "Fjerner unødvendige mellomrom, tomme linjer og unødvendig formatering, "
             "samtidig som overskrifter, lister og tabeller beholdes."
         ),
         "file_info": "**Fil:** {name}  ·  **Størrelse:** {size:.1f} KB",
@@ -79,17 +79,17 @@ TEXT = {
         "converting_spinner": "Konverterer…",
         "conversion_failed": "Konvertering feilet: {error}",
         "done": "Ferdig!",
-        "metric_raw": "Rå tokens (est.)",
-        "metric_final": "Endelige tokens (est.)",
-        "metric_saved": "Spart",
+        "metric_raw": "Tokens før",
+        "metric_final": "Tokens etter",
+        "metric_saved": "Redusert",
         "preview_subheader": "Forhåndsvisning",
         "preview_label": "Markdown-resultat",
         "download_button": "⬇️ Last ned .md-fil",
         "copy_expander": "Kopier ren tekst (ingen nedlasting nødvendig)",
         "upload_prompt": "Last opp en fil over for å komme i gang.",
         "footer": (
-            "Alt kjører lokalt i denne økten — ingen filer blir lagret permanent. "
-            "Bygget med [MarkItDown](https://github.com/microsoft/markitdown) og Streamlit."
+            "Alt kjøres lokalt i pågående økt og ingen filer blir lagret permanent. "
+            "Bygget med MarkItDown og Streamlit."
         ),
         "lang_name": "Norsk",
     },
