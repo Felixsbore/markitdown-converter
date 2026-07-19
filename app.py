@@ -88,8 +88,8 @@ TEXT = {
         "copy_expander": "Kopier ren tekst (ingen nedlasting nødvendig)",
         "upload_prompt": "Last opp en fil over for å komme i gang.",
         "footer": (
-            "Kjører helt innenfor denne serveroppkoblingen — filer lagres ikke permanent. "
-            "Bygget med [MarkItDown](https://github.com/microsoft/markitdown) + Streamlit."
+            "Alt kjører lokalt i denne økten — ingen filer blir lagret permanent. "
+            "Bygget med [MarkItDown](https://github.com/microsoft/markitdown) og Streamlit."
         ),
         "lang_name": "Norsk",
     },
@@ -126,12 +126,18 @@ ALL_EXTS = sorted({e for exts in SUPPORTED["en"].values() for e in exts})
 if "lang" not in st.session_state:
     st.session_state.lang = "en"
 
-flag_col1, flag_col2, _spacer = st.columns([1, 1, 6])
+brand_col, flag_col1, flag_col2 = st.columns([4, 1, 1])
+with brand_col:
+    st.markdown(
+        "<div style='color:gray; font-size:0.8em; padding-top:0.6em;'>"
+        "Ferula Labs Etb. 2024</div>",
+        unsafe_allow_html=True,
+    )
 with flag_col1:
-    if st.button("🇬🇧 EN", help="English", use_container_width=True):
+    if st.button("English", help="Switch to English", use_container_width=True):
         st.session_state.lang = "en"
 with flag_col2:
-    if st.button("🇳🇴 NO", help="Norsk", use_container_width=True):
+    if st.button("Norsk", help="Bytt til norsk", use_container_width=True):
         st.session_state.lang = "no"
 
 lang = st.session_state.lang
